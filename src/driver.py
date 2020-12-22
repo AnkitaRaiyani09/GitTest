@@ -16,7 +16,7 @@ class Driver:
             options.add_argument("--disable-notifications")
             options.add_argument("--kiosk")  # for linux or mac
             options.add_argument("--start-maximized")  # for windows
-            driver = webdriver.Chrome(options=options, executable_path=str(Path.home()) + "Downloads/chromedriver",
+            driver = webdriver.Chrome(options=options, executable_path=str(Path.home()) + "/Downloads/chromedriver",
                                       service_args=["--verbose", path])
             #driver.implicitly_wait(10)
             driver.get("https://github.com/")
